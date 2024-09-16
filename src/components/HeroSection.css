@@ -1,0 +1,37 @@
+.wallet-action-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 1rem;
+}
+
+.wallet-action-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.swipe-button {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swipe-button:hover {
+  background-color: #feb47b;
+  transform: translateX(10px); /* Simple "swipe" effect */
+}
+
+.input-field {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
