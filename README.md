@@ -40,7 +40,6 @@ CryptoTracker combines the power of **Solana Wallet Adapter** and the **CoinGeck
 
 ## 📸 Screenshots
 
-![CryptoTracker Screenshot](https://your-image-url.com/screenshot.png)
 
 ---
 
