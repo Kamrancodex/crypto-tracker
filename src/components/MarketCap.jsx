@@ -1,5 +1,6 @@
 // components/MarketCap.js
 import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
+import React from "react";
 
 const MarketCap = () => {
   return (

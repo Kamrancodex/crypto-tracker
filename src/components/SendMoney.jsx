@@ -4,7 +4,7 @@ import { PublicKey, Transaction, SystemProgram } from "@solana/web3.js";
 import { Connection } from "@solana/web3.js";
 
 const SendMoney = () => {
-  const { publicKey, sendTransaction, connected } = useWallet(); // Check if the wallet is connected
+  const { publicKey, sendTransaction, connected } = useWallet(); // Check if wallet is connected
   const [recipient, setRecipient] = useState("");
   const [amount, setAmount] = useState("");
   const [transactionStatus, setTransactionStatus] = useState(null);
@@ -27,13 +27,9 @@ const SendMoney = () => {
     }
 
     try {
-      // Convert recipient to PublicKey object
       const recipientPubKey = new PublicKey(recipient);
-
-      // Convert amount in SOL to lamports
       const lamports = parseFloat(amount) * 1_000_000_000;
 
-      // Create a new transaction
       const transaction = new Transaction().add(
         SystemProgram.transfer({
           fromPubkey: publicKey,
@@ -42,13 +38,9 @@ const SendMoney = () => {
         })
       );
 
-      // Send the transaction
       const signature = await sendTransaction(transaction, connection);
-
-      // Confirm the transaction
       await connection.confirmTransaction(signature, "processed");
 
-      // Update transaction status
       setTransactionStatus(`Transaction successful! Signature: ${signature}`);
     } catch (error) {
       console.error("Transaction failed", error);

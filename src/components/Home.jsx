@@ -5,7 +5,6 @@ import TrendingCoins from "./TrendingCoins";
 import CryptoList from "./CryptoList";
 import HeroSection from "./HeroSection";
 import BalanceDisplay from "./BalanceDisplay";
-import { Outlet } from "react-router-dom"; // Import Outlet for nested routing
 
 const Home = () => {
   return (

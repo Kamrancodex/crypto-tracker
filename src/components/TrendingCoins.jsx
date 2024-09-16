@@ -1,5 +1,5 @@
 // src/components/TrendingCoins.jsx
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ArrowUpIcon, ArrowDownIcon } from "@heroicons/react/20/solid"; // Use 20px icons for smaller size
 
