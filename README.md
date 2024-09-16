@@ -1,6 +1,6 @@
 # CryptoTracker - Solana Wallet and Cryptocurrency Tracker
 
-![CryptoTracker](/thumbnail.png)
+![CryptoTracker](/public/thumbnail.png)
 
 CryptoTracker is a web app built using React, Solana, and the CoinGecko API. It allows users to connect their Solana wallet, send and receive SOL, check wallet balances, and track real-time cryptocurrency prices and trends.
 
